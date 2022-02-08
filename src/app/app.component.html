@@ -7,15 +7,15 @@
   </div>
   <div id="demo2" *ngIf="showRecepieForm">
     <form name="Receipe" action="">
-      <button role="button">Add Recipe</button>
+      <button role="button">Submit</button>
       <div>
         <label for="recipe-name" aria-label="recipe-name">recipe-name</label>
       </div>
-      <input role="textbox" type="textbox"  name="recipe-name" [(ngModel)]="recipeName">
+      <input role="textbox" type="textbox"  name="recipe-name" [(ngModel)]="recipeName" placeholder="recipe-name">
       <div>
         <label for="recipe-instructions" aria-label="recipe-instructions">recipe-instructions</label>
       </div>
-      <input role="textbox" type="textbox"  name="recipe-instructions" [(ngModel)]="recipeInstructions" >
+      <input role="textbox" type="textbox"  name="recipe-instructions" [(ngModel)]="recipeInstructions" placeholder="recipe-instructions">
       <br><br>
     </form>
   </div>
