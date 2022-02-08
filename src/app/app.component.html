@@ -1,6 +1,6 @@
 <div>
   <div id="demo1" *ngIf="showReceipeDashboard">
-    <h2 >Mas</h2>
+    <h2 role="heading">My Recipes</h2>
     <!-- ^ Do not remove this element ^ -->
     <div><button (click)="receipeClicked()" role="button" name="Add Recipe">Add Recipe</button></div>
     <p>There are no recipes to listss</p>
@@ -9,14 +9,14 @@
     <form name="Receipe" action="">
        <div><input type="submit" value="submit" role="button" (click)="submit()" ></div>
     
-      <div role="textbox" ><input type="text"  name = "/recipe-name/i" [(ngModel)]="recipeName" placeholder="recipe-name"></div>
+      <input type="text"   role="textbox"  name = "recipe-name" [(ngModel)]="recipeName" placeholder="recipe-name">
  
-      <div role="textbox" > <input  type="text"  role="textbox" name="recipe-instructions" [(ngModel)]="recipeInstructions" placeholder="recipe-instructions"></div>
+      <input  type="text"  role="textbox" name="recipe-instructions" [(ngModel)]="recipeInstructions" placeholder="recipe-instructions">
       <br><br>
     </form>
   </div>
   <div id="demo3" *ngIf="showFinalRecipe" >
-    <h2 role="heading">My Receipesasasasa</h2>
+    <h2 role="heading">My Recipes</h2>
     <ul role="listitem"><li role="listitem">{{recipeName}} --> {{recipeInstructions}}</li></ul>
   </div>
 </div>
