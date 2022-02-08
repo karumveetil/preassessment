@@ -9,9 +9,9 @@
     <form name="Receipe" action="">
        <div><input type="submit" value="submit" role="button" (click)="submit()" ></div>
     
-      <input type="text"  role="textbox" name = "recipe-name" [(ngModel)]="recipeName" placeholder="recipe-name">
+      <div role="textbox" ><input type="text"  name = "/recipe-name/i" [(ngModel)]="recipeName" placeholder="recipe-name"></div>
  
-      <input  type="text"  role="textbox" name="recipe-instructions" [(ngModel)]="recipeInstructions" placeholder="recipe-instructions">
+      <div role="textbox" > <input  type="text"  role="textbox" name="recipe-instructions" [(ngModel)]="recipeInstructions" placeholder="recipe-instructions"></div>
       <br><br>
     </form>
   </div>
