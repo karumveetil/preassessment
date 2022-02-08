@@ -8,14 +8,10 @@
   <div id="demo2" *ngIf="showRecepieForm">
     <form name="Receipe" action="">
        <div><input type="submit" value="submit" role="button" (click)="submit()" ></div>
-      <div>
-        <label for="recipe-name" aria-label="recipe-name">recipe-name</label>
-      </div>
-      <input role="textbox" type="textbox"  name="recipe-name" [(ngModel)]="recipeName" placeholder="recipe-name">
-      <div>
-        <label for="recipe-instructions" aria-label="recipe-instructions">recipe-instructions</label>
-      </div>
-      <input role="textbox" type="textbox"  name="recipe-instructions" [(ngModel)]="recipeInstructions" placeholder="recipe-instructions">
+    
+      <input type="textbox"  role="textbox" name = "recipe-name" [(ngModel)]="recipeName" placeholder="recipe-name">
+ 
+      <input  type="textbox"  role="textbox" name="recipe-instructions" [(ngModel)]="recipeInstructions" placeholder="recipe-instructions">
       <br><br>
     </form>
   </div>
