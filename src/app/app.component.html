@@ -8,12 +8,11 @@
   <div id="demo2" *ngIf="showRecepieForm">
     <form name="Receipe" action="">
        <div><input type="submit" value="submit" role="button" (click)="submit()" ></div>
-    
-        <textbox role="textbox" name="recipe-name" ><input type="text"   role="textbox"  name = "recipe-name" [(ngModel)]="recipeName" placeholder="recipe-name"></textbox>
- 
-      <textbox role="textbox" name="recipe-instructions" ><input  type="text"  role="textbox" name="recipe-instructions" [(ngModel)]="recipeInstructions" placeholder="recipe-instructions">
-      
-      </textbox>
+    <label role="textbox" for="recipe-name">recipe-name</label>
+        <input type="text"   role="textbox"  name = "recipe-name" [(ngModel)]="recipeName" placeholder="recipe-name">
+ <label role="textbox" for="recipe-instructions">recipe-instructions</label>
+      <input  type="text"  role="textbox" name="recipe-instructions" [(ngModel)]="recipeInstructions" placeholder="recipe-instructions">
+  
       <br><br>
     </form>
   </div>
